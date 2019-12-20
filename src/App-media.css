@@ -1,0 +1,144 @@
+/*
+*
+*			Media Queries for Responsive Web Design - basic
+*/
+
+/* Big tablet - 1024px - 1200px
+*****************************************/
+
+@media only screen and (max-width: 1200px) {
+    body{
+        background-size: 70%;
+    }
+
+}
+
+
+/* Tablets - 768px - 1023px
+*****************************************/
+
+@media only screen and (max-width: 1023px) {
+    body{
+        background-size: 80%;
+    }
+}
+
+
+/* Small phones/ tablets - 481px - 767px
+*****************************************/
+
+@media only screen and (max-width: 768px) {
+
+    body{
+        background-size: 100%;
+    }
+    .big-header-logo{
+        display: none !important;
+    }
+    .small-header-logo{
+        display: block !important;
+        margin-bottom: -30px;
+    }
+    .big-header-logo-cat{
+        display: none !important;
+    }
+
+    .small-header-logo-cat{
+        display: block !important;
+    }
+    .nav-buttons{
+        margin-top: 10px !important
+    }
+
+}
+
+
+/* Small phones - Less than or equal to 480px
+*********************************************/
+
+@media only screen and (max-width: 480px) {
+    body{
+        background-size: 100%;
+    }
+    .col-6{
+        flex: 0 0 100% !important;
+        max-width: 80% !important;
+        margin-left: 10% !important;
+    }
+    tbody{}
+    .category-page-link{
+        display: block;
+    }
+    .expand-link{
+        display: none;
+    }
+    .big-header-logo{
+        display: block !important;
+        width: 230px !important;
+    }
+    .small-header-logo{
+        display: none !important;
+        width: 140px !important;
+    }
+    .big-header-logo-cat{
+        display: none !important;
+    }
+    .small-header-logo-cat{
+        display: block !important;
+    }
+    .nav-things{
+        display: none !important;
+    }
+    .secret-nav{
+        display: block !important;
+    }
+    .show-menu{
+        display: block !important;
+        float: right;
+    }
+}
+
+@media only screen and (max-width: 417px) {
+    body{
+        background-size: 100%;
+    }
+    .category-wrapper{
+        min-height: 50px;
+        max-height: 50px;
+    }
+    .box{
+        overflow-y: hidden;
+    }
+    .category-tbody{
+        display: none;
+    }
+    .category-page-link{
+        display: none;
+    }
+    .expand-link{
+        display: block;
+    }
+    .big-header-logo{
+        display: none !important;
+    }
+    .small-header-logo{
+        display: block !important;
+        width: 140px !important;
+    }
+    .small-header-logo-cat{
+        display: none !important;
+    }
+    .show-cat{
+        min-height: 150px !important;
+        max-height: 250px !important;
+       }
+       .show-box{
+        overflow-y: scroll !important;
+        
+       }
+       .show-tbody{ 
+        display: table-row-group !important;
+        width: 100% !important
+       }
+  
+}

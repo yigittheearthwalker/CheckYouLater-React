@@ -1,0 +1,417 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+  }
+  html{
+
+
+  }
+
+  body {
+    color: #555;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 24px;
+    text-rendering: optimizeLegibility;
+    margin: 0;
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    background: url(components/layout/img/cyl-logo-bg.png) no-repeat;
+    background-size: 60%;
+    background-position:
+    50% 120px,
+    100%,
+    20px 20px,
+    50%,
+    0 90%;
+  }
+
+
+  .row{
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+    margin: 0 !important;
+  }
+  section{
+      width: 100%;
+      height: 100vh;
+      background-color: #000 !important;
+  }
+  a:link, a:visited{
+    text-decoration: none;
+    color: inherit;
+  }
+  ul{
+    list-style: none;
+  }
+  .show-item{
+    display: block !important
+  }
+  .hide-item{
+    display: none !important
+  }
+  /* ================================================================================*/
+  /* ========================              HEADER             =======================*/
+  /* ================================================================================*/
+   .header{
+       color: #fff !important;
+       /*background-color: #4daf7c; #2574a9 #29B6F6*/
+       background-color: #3fc380 !important;
+       padding-top: 0px !important;
+       padding-bottom: 0px !important
+   }
+   .logo{
+   
+   }
+   .big-header-logo{
+     width: 240px;
+     display: block;
+     margin-top: -.25rem;
+     margin-bottom: -.25rem;
+   }
+   .small-header-logo{
+     margin: -1.25rem 0 0 -3.1rem;
+     width: 170px !important;
+     display: none;
+   }
+   .small-header-logo-cat{
+    margin: -1.05rem 0 0 -3.1rem;
+    width: 170px !important;
+    display: none;
+  }
+   .nav-buttons, .header-item{
+     
+      padding-top: 15px !important;
+  }
+.nav-buttons ul li{
+   list-style-type: none;
+   display: inline-block;
+   margin: 0 10px 0 0;
+}
+.nav-things{
+  display: block
+}
+.show-menu{
+  display: none !important;
+}
+.secret-nav{
+  display: none !important;
+}
+.expand-link{
+  display: none
+}
+.nav-btns, .filter-form{
+  display: inline-block
+}
+.nav-btns li {
+  display: inline-block
+}
+  /* ================================================================================*/
+  /* ========================         PAGE CONTAINER       =======================*/
+  /* ================================================================================*/
+.content-container{
+  min-height: 130vh;
+ background-color: rgba(255,255,255, 0.87);
+ width: 100% !important;
+  display: block;
+}
+  /* ================================================================================*/
+  /* ========================         ADD BOOKMARK FORM       =======================*/
+  /* ================================================================================*/
+     /*.form-control, .save-bookmark{
+       width: 100% !important;
+       position: relative;
+       z-index: 9999;
+     }
+     .form-container{
+       margin-top: 1%;
+     }
+     .additional-inputs{
+       display: none;
+     }
+
+     .new-category-input{
+       display: none;
+     }*/
+     .new-url{
+      padding-top: 15px !important;
+     }
+     .btn-save-bookmark{
+       width: 100%;
+     }
+  /* ================================================================================*/
+  /* ========================          WELCOME SCREEN         =======================*/
+  /* ================================================================================*/  
+  
+  .hello-header{
+    padding-top: 2.25rem;
+    padding-bottom: .75rem;
+    font-size: 250%;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 500 !important;
+    }
+    .hello-container{
+      padding-top: 1.25rem;
+    }
+    .hello-icon{
+      width: 100%;
+      text-align: center;
+      font-size: 350%;
+      padding-bottom: 1rem;
+      color: #1565C0;
+    }
+    .hello-box{
+      padding: 0 1.25rem !important;
+      font-size: 90%;
+      text-align: justify;
+      color: 555 !important;
+    }
+
+  /* ================================================================================*/
+  /* ========================   BOOKMARKS/CATEGORY CONTAINER  =======================*/
+  /* ================================================================================*/
+     .catRow{
+      position: relative !important;
+       margin-top: 3% !important;
+       z-index: 0 !important;
+     }
+     .box{
+       padding: 0% !important;
+       /*background-color: #B39DDB !important;*/
+       color: #fff !important;
+       /*border-radius: 0 !important;*/
+       height: 100%;
+       overflow-y: scroll;
+       
+       
+     }
+     .category-wrapper{
+      padding-left: .25rem !important;
+      padding-right: .25rem !important;
+      min-height: 150px;
+       max-height: 250px;
+       margin-bottom: .50rem !important;
+
+     }
+
+     .site-wrapper{
+      padding-left: .20rem !important;
+      padding-right: .20rem !important;
+      margin-bottom: 2vh !important
+     }
+     .catBox{
+      /*-padding: 0% !important;*/
+      /*background-color: #B39DDB !important;*/
+      color: #fff !important;
+      /*border-radius: 0 !important;*/
+      height: 50px !important;
+      padding: 3rem .5rem 1rem .5rem !important;
+      /*margin-left: .75rem !important;*/
+      display: flex;
+      align-items: center;
+      color: #555 !important;
+      border-radius: 6px
+     }
+     .catBox table tbody{
+      display: table-row-group !important;
+     }
+     .bookmark-anchor, #dropdown-basic{
+       vertical-align: baseline !important
+     }
+     .bookmark-header, .site-logo{
+      vertical-align: baseline !important;
+      display: inline-block;
+
+     }
+     .btn-group{
+      position: relative !important;
+      z-index: 1;
+     }
+     .dropdown-menu{
+       position: absolute !important;
+       z-index: 9999 !important;
+     }
+     .full-width{
+       width: 100% !important;
+       padding: 0% !important;  
+     }
+   
+     .table{
+      color: #555 !important;
+     }
+     .table-more{
+       text-align: center !important;
+     }
+     .box td{
+       padding-top: 0% !important;
+       padding-bottom: 0% !important;
+     }
+     .bookmark-name, .site-logo{
+      font-size: 80%;
+      vertical-align: text-top !important;
+     }
+     .btn-column {
+       text-align: right
+     }
+     .color-button{
+       width: 100% !important
+     }
+     .color-box{
+       height: 30px !important
+     }
+     .color-picker{
+       margin-left: 10% !important
+
+     }
+  /* ================================================================================*/
+  /* ========================      FILTER LIST SCREEN         =======================*/
+  /* ================================================================================*/  
+  
+  .filter-list-header h5{
+    margin: 0 !important
+  }
+
+  .filter-list-header,
+  .filter-list-item{
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    font-size: 80%
+  }
+  .filter-list-item{
+    padding-left: 40px !important;
+  }
+
+  /* ================================================================================*/
+  /* ========================      SETTINGS       =======================*/
+  /* ================================================================================*/ 
+
+  .settings-label, .settings-input{
+    vertical-align: baseline
+  }
+
+     /*---Auth---*/
+
+     .content-container, .footer{
+       display: block;
+       float: left;
+     }
+     .footer{
+       bottom: 0%;
+       width: 100%;
+       height: 100%;
+       color: #fff !important;
+       /*background-color: #4daf7c; #2574a9 */
+       background-color: #3fc380;
+     }
+     .footer-links{
+       padding-top: .90rem;
+     }
+     .footer-text{
+       padding-top: 5rem !important;
+       line-height: 90%;
+     }
+     .footer-logo{
+      padding-top: 1.5rem;
+     }
+     .footer-logo img{
+       height: 120px;
+     }
+
+
+     .category-container{
+       margin-top: 5%;
+       float: right;
+     }     
+  .login-buttons{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 3vh;
+  }
+  .login-buttons li{
+    margin-top: 3vh;
+    width: 100%;
+    text-align: center;
+  }
+  .google-btn{
+    color: #fff !important;
+    text-decoration: none !important;
+    font-size: 100% !important;
+    padding: 10px !important;
+    width: 100% !important;
+    background: #db4437;
+}
+.facebook-btn{
+  color: #fff !important;   
+  text-decoration: none !important;
+  font-size: 100% !important;
+  padding: 10px !important;
+  width: 100% !important;
+  background: #3b5998;
+}
+.twitter-btn{
+  color: #fff !important;
+  text-decoration: none !important;
+  font-size: 100% !important;
+  padding: 10px !important;
+  width: 100% !important;
+  background: #1da1f2;
+}
+
+.login-buttons li a:link,
+.login-buttons li a:visited{
+  color: #fff !important;
+}
+.buton-icons{
+  font-size: 140%;
+  vertical-align: middle;
+}
+.btn-info{
+  background:  rgba(255,255,255,0.2) !important;
+  border: none !important;
+}
+.setting-box{
+  padding: 5%;
+}
+.tab-content{
+  position: relative !important;
+}
+.card-box{
+  display: inline-block !important;
+  margin-right: 1%;
+}
+#otherCategories{
+  color: #555 !important;
+}
+
+
+
+
+/*-----------------scrollbar-----------------------*/
+
+
+.style-3::-webkit-scrollbar-track
+{
+	
+	background-color: transparent;
+}
+
+.style-3::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: transparent;
+}
+
+.style-3::-webkit-scrollbar-thumb
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.05);
+  background-color: #eee;
+  border-radius: 3px;
+}
+.card{
+  float: left;
+}
